@@ -97,6 +97,8 @@ public class MapsActivity extends android.support.v4.app.FragmentActivity {
 		nMapa.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 		nMapa.moveCamera(CameraUpdateFactory.newLatLngZoom(CENTRO, 15));
 		nMapa.animateCamera(CameraUpdateFactory.zoomIn());
+		nMapa.setMyLocationEnabled(true);
+		nMapa.getUiSettings().setCompassEnabled(true);
 	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
